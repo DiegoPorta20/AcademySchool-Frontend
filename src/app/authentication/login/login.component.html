@@ -5,11 +5,14 @@
             <img src="https://cdn-icons-png.flaticon.com/512/4696/4696777.png" alt="">
         </div>
         <h1>Mate Izi</h1>
-        <form class="login">
+        <form class="login" [formGroup]="formLogin" (submit)="signIn()">
             <p>Email</p>
-            <input type="email">
+            <input type="email" id="email" formControlName="email">
             <p>Password</p>
-            <input type="password">
+            <input type="password" id="password" formControlName="password">
+            <div class="submit">
+                <input type="submit" [disabled]="formLogin.invalid" value="Login">
+            </div>
         </form>
         <p><a routerLink="/forgotPassword">Forgot password</a></p>
     </div>

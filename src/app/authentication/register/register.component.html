@@ -6,43 +6,43 @@
             <h1>Mate Izi</h1>
         </div>
         <h1>SUBSCRIBE</h1>
-        <form class="register">
+        <form class="register" [formGroup]="formRegister" (submit)="signUp()">
             <div class="data">
                 <div class="input">
                     <p>First Name</p>
-                    <input type="text">
+                    <input type="text" id="firstName" formControlName="firstName">
                 </div>
                 <div class="input">
                     <p>Last Name</p>
-                    <input type="text">
+                    <input type="text" id="lastName" formControlName="lastName">
                 </div>
                 <div class="input">
                     <p>Phone</p>
-                    <input type="text">
+                    <input type="text" id="phone" formControlName="phone">
                 </div>
                 <div class="input">
                     <p>College</p>
-                    <input type="text">
+                    <input type="text" id="college" formControlName="college">
                 </div>
                 <div class="input">
                     <p>Email</p>
-                    <input type="email">
+                    <input type="email" id="email" formControlName="email">
                 </div>
                 <div class="input">
                     <p>Confirm Email</p>
-                    <input type="email">
+                    <input type="email" id="confirmEmail" formControlName="confirmEmail">
                 </div>
                 <div class="input">
                     <p>Password</p>
-                    <input type="password">
+                    <input type="password" id="password" formControlName="password">
                 </div>
                 <div class="input">
                     <p>Confirm Password</p>
-                    <input type="password">
+                    <input type="password" id="confirmPassword" formControlName="confirmPassword">
                 </div>
             </div>
             <div class="submit">
-                <input type="submit" value="Register">
+                <input type="submit" [disabled]="formRegister.invalid" value="Register">
             </div>
         </form>
         <p><a routerLink="/forgotPassword">Forgot password</a></p>

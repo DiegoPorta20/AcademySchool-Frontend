@@ -22,6 +22,15 @@ import { ShedulesComponent } from './shedules/shedules.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    LandingComponent,
+    StartComponent,
+    ClassesComponent,
+    CoursesComponent,
+    TeachersComponent,
+    PaymentsComponent,
+    ShedulesComponent
   ]
 })
 export class LearningModule { }
