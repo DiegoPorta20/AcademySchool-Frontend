@@ -1,0 +1,111 @@
+.fondo {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    width: 800px;
+    border-radius: 15px;
+    background: #fff;
+    flex-direction: column;
+}
+
+.content .img { 
+    height: 100px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content .img img {
+    width: 100px;
+    padding-right: 40px;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content .register {
+    width: 90%;
+    margin: auto;
+}
+.content .register .data{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.content .register .submit{
+    width: 120px;
+    margin: auto;
+    margin-top: 20px;
+    background: #1F2EB4;
+    border-radius: 5px;
+}
+.content .register .submit input{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding-left: 0;
+    font-size: 18px;
+    color: #fff;
+    background: #1F2EB4;
+}
+.content .register p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.content .register input {
+    border: none;
+    outline: none;
+    background: #eaeaea;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.content .register .input p{
+    margin: 0;
+}
+.content a {
+    color: #1F2EB4;
+}
+
+.content p {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: end;
+    font-weight: 600;
+}
+
+button {
+    position: fixed;
+    top: 25px;
+    right: 100px;
+    border: none;
+    width: 110px;
+    height: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1F2EB4;
+    color: #fff;
+}
